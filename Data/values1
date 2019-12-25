@@ -1,0 +1,59 @@
+#name:"lili" #yaml编写时 冒号后 必须 跟空格
+#name:"lili"
+#--------对象---------
+#value1: {"name":"战三"}#支持python数据类型
+#value2: 战三 #支持自动转换数据类型
+#value3: #多层级关系
+#  name1: "张三"
+#  name2: "李四"
+
+##----------数组------
+#value4:  #yaml文件数组格式
+# -1 # - 后必须跟空格
+# -2
+#
+#value5: [1,2,3]   #python数组类型
+# value6:  #字典 套 列表 套 字典
+#   - name: "lili"
+#   - name: "lili"
+
+
+#-----纯量-----------
+#布尔
+#value7: true #yaml 文件支持
+#value: false #yaml文件支持
+
+#value9: True #python数据类型
+#value10： False #python数据类型
+
+#特殊----了解 不要用
+#valuex: no
+#valuey: yes
+
+#整数  浮点数
+#value11: 122
+#value12： 12.000023
+
+
+#空
+value13: ~ #yaml 空
+value16:  #没有任何内容支持
+value17: null #支持
+value18: Null #支持
+
+
+value14: None #python数据 不支持
+value15: none #python数据 不支持
+
+
+#日期
+
+value20: 2020-11-11 12:12:12 #返回值 datetime.datetime
+value21: 2020-11-11 #返回值 datetime.date
+value22: 12:12:12 #返回整数
+
+value23: 2020-11-11 02:02:01 #如果是个位数 一定有要补0
+value24: 2020-01-11 #如果是个位数一定有要补0
+
+
+
